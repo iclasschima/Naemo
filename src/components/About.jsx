@@ -16,7 +16,7 @@ export default () => {
 
             <Row xs={1}>
                 <Col>
-                    <h5>What About AfriSkuat?</h5>
+                    <h5>Who is Naemo?</h5>
                     <p>
                         We are a start-up software and technology company based in Nigeria. With a dynamic	team	
                         consisting of software developers, user interface designers, performance analysts and business	

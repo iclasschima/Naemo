@@ -13,7 +13,7 @@ export default () => {
                 <Col id="features">
                     <div>
                         <h6><FiDatabase /> Huge Database</h6>
-                        <p>Gain access to our database consisting thousands of African players and teams</p>
+                        <p>Gain access to our database consisting thousands of African players</p>
                     </div>
                     <div>
                         <h6><RiFootprintLine /> Track development </h6>

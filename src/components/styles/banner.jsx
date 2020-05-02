@@ -1,10 +1,11 @@
 import styled from "styled-components"
 import banner1 from "../../assets/soccer-ball.jpg"
 import banner2 from "../../assets/jump.jpg"
+import banner4 from "../../assets/remarkables.jpg"
 import banner3 from "../../assets/sky-sunset-field.jpg";
 
 const pathname = window.location.pathname
-let img = pathname === "/" ? banner1 : pathname === "/about" ? banner2 : banner3;
+let img = pathname === "/" ? banner1 : pathname === "/afriskaut" ? banner2 : pathname === "/" ? banner1 : pathname === "/about" ? banner4 : banner3
 
 export default styled.div`
     background: url(${img}) center;
@@ -18,7 +19,7 @@ export default styled.div`
 
         h1{
             font-size: 30px !important;
-            line-height: 46px
+            line-height: 46px;
         }
 
         span {
@@ -43,7 +44,7 @@ export default styled.div`
         top: 20%;
         padding-left: 13%;
         h1{
-            font-weight: 600;
+            font-weight: 500;
             color: #fff;
             font-size: 50px;
         }

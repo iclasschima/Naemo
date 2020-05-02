@@ -6,19 +6,26 @@ export default () => {
     return (
         <Banner>
             <span></span>
-            {pathname === "/" ? <Home /> : pathname === "/about" ?  <About /> : <Contact />}
+            {pathname === "/" ? <Home /> : pathname === "/afriskaut" ?  <Afriskaut /> : pathname === "/about" ? <About /> : <Contact />}
         </Banner>
     )
 }
 
 const Home = () => (
     <div>
-        <h1>The Ultimate Scout</h1>
-        <span>Analyzing data to help make informed decisions</span>
+        <h1>For The Love Of The Game</h1>
+        <span><i>"Football is life"</i> - Vince Lombardi</span>
     </div>
 )
 
 const About = () => (
+    <div id="about">
+    <h1>There Is No I In Football</h1>
+    <span><i>"I have yet to be in a game where luck was involved"</i> - Urban Meyer</span>
+    </div>
+)
+
+const Afriskaut = () => (
     <div id="about">
     <h1>Discovering Talents</h1>
     <span>Keeping tabs on player development through data - No paperwork </span>
