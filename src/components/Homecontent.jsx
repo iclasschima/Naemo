@@ -6,7 +6,7 @@ import Content from "./styles/content"
 
 export default () => (
     <Content className="container-fluid">
-        <h5>Naemo is a technology driven company providing innovating solutions in African football.</h5>
+        <h5>Naemo is a technology driven company providing innovative solutions in African football.</h5>
         <Row>
             <Col md={7} id="image_div">
                 <img src={image2} />

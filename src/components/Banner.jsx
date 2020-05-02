@@ -20,7 +20,7 @@ const Home = () => (
 
 const About = () => (
     <div id="about">
-    <h1>There Is No I In Football</h1>
+    <h1>There Is No I In A Team</h1>
     <span><i>"I have yet to be in a game where luck was involved"</i> - Urban Meyer</span>
     </div>
 )
