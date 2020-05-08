@@ -53,7 +53,7 @@ export default styled.div`
        }
     }
 
-    @media screen and (max-width: 640px){
+    @media screen and (max-width: ${props => props.theme.device.mobile}){
         padding: 0 !important;
         div {
             width: 100% !important;
@@ -63,7 +63,7 @@ export default styled.div`
         }
 
         .row {
-            margin-bottom: 3rem
+            margin-bottom: 1rem
         }
 
         #mission_div {
@@ -81,11 +81,6 @@ export default styled.div`
                     margin-bottom: 0;
                 }
             }
-        }
-    }
-    @media screen and (max-width: 768px){
-        div {
-            width: 90% !important;
         }
     }
 `

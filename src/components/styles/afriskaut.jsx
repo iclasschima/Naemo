@@ -37,5 +37,9 @@ export default styled.div`
         .col {
             padding: 0 1rem;
         }
+        #features {
+            padding: 0 1rem;
+            margin-bottom: 2rem;
+        }
     }
 `

@@ -5,6 +5,6 @@ import error404 from "../assets/pagenotfound.svg"
 export default () => (
     <Error className="text-center">
         <h5>Page Not Found!</h5>
-        <img src={error404}/>
+        <img src={error404} alt="page not found"/>
     </Error>
 )

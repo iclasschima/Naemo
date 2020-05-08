@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import banner1 from "../../assets/soccer-ball.jpg"
+import banner1 from "../../assets/soccer-africa.jpg"
 import banner2 from "../../assets/jump.jpg"
 import banner4 from "../../assets/remarkables.jpg"
 import banner3 from "../../assets/sky-sunset-field.jpg";

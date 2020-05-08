@@ -26,22 +26,22 @@ export default () => {
                 </Col>
                 
                 <Col md={5}>
-                    <h6>Request Free Demo</h6>
-                    <Form>
+                    <h6>Request Free Afriskaut Demo App</h6>
+                    <Form  action="https://app.us18.list-manage.com/subscribe/post?u=25c112b03c33ce78370e087f5&amp;id=026c5d2e81"
+                             method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                         <Form.Group>
-                            <Form.Control type="text" placeholder="First Name"/>
+                            <Form.Control type="text" placeholder="First Name" name="FNAME" id="mce-FNAME" required/>
                         </Form.Group>
                         <Form.Group>
-                            <Form.Control type="text" placeholder="Last Name"/>
+                            <Form.Control type="text" placeholder="Last Name" name="LNAME" id="mce-LNAME" required/>
                         </Form.Group>
                         <Form.Group>
-                            <Form.Control type="email" placeholder="Email" />
+                            <Form.Control type="email" placeholder="Email"  name="EMAIL" id="mce-EMAIL" required/>
                         </Form.Group>
                             <Form.Group>
-                            <Form.Control as="select">
-                                <option>Select role</option>
-                                <option>Fan</option>
-                                <option>Scout</option>
+                            <Form.Control as="select" name="MMERGE3" className="required" id="mce-MMERGE3">
+                                <option value="Fan">Fan</option>
+                                <option value="Scout">Scout</option>
                             </Form.Control>
                         </Form.Group>
 

@@ -1,5 +1,5 @@
 import React from "react"
-import {Row, Col, Button} from "react-bootstrap"
+import {Row, Col} from "react-bootstrap"
 import image from "../assets/apppic.png"
 import image2 from "../assets/apppic2.png"
 import Content from "./styles/content"
@@ -9,8 +9,8 @@ export default () => (
         <h5>Naemo is a technology driven company providing innovative solutions in African football.</h5>
         <Row>
             <Col md={7} id="image_div">
-                <img src={image2} />
-                <img src={image} />
+                <img src={image2} alt="app_image"/>
+                <img src={image} alt="app_image"/>
             </Col>
             <Col id="text_div">
                 <h6>AfriSkaut</h6>
