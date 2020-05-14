@@ -7,7 +7,7 @@ export default () => {
     return (
         <Footer className="container-fluid">
             <Row>
-                <Col md={4} className="mb-3">
+                <Col md={5} className="mb-3">
                     <h4>Naemo</h4>
                     <p>We are building innovative solutions in the areas of scouting, player performance, data gathering and football education.</p>
                 </Col>
@@ -28,12 +28,6 @@ export default () => {
                         <li><a href="/"> Instagram </a></li>
                         <li><a href="/"> LinkedIn </a></li>
                     </ul>
-                </Col>
-                <Col>
-                    <h4>News Letter</h4>
-                    <form>
-                        <input type="text" className="form-control" placeholder="Enter email" />
-                    </form>
                 </Col>
                
             </Row>

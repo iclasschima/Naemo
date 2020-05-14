@@ -28,7 +28,7 @@ export default () => {
                 <Col md={5}>
                     <h6>Request Free Afriskaut Demo App</h6>
                     <Form  action="https://app.us18.list-manage.com/subscribe/post?u=25c112b03c33ce78370e087f5&amp;id=026c5d2e81"
-                             method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                             method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="" novalidate>
                         <Form.Group>
                             <Form.Control type="text" placeholder="First Name" name="FNAME" id="mce-FNAME" required/>
                         </Form.Group>

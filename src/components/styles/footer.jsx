@@ -45,7 +45,7 @@ export default styled.div`
             margin-bottom: 25px;
         }
         #bootom_footer {
-            margin-top: 3rem;
+            margin-top: 0rem;
         }
 
         padding: 3rem 1rem 0;

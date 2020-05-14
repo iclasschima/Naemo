@@ -1,10 +1,38 @@
-import React from "react"
+import React, {useState} from "react"
+import axios from "axios"
 import Contact from "./styles/contact"
 import {FiMapPin, FiMail, FiPhone} from "react-icons/fi"
 import {FaInstagram,FaLinkedinIn, FaFacebookF, FaTwitter} from "react-icons/fa"
 import {Form, Row, Col, Button} from "react-bootstrap"
 
 export default () => {
+
+    const [state, setState] = useState({
+        name: "",
+        email: "",
+        title: "",
+        message: "",
+        mailSent: false,
+        error: null
+    })
+
+    const handleChange = e => {
+        const {name, value} = e.target
+        setState({...state, [name]: value})
+    }
+
+    const handleSubmit = async e => {
+        e.preventDefault()
+
+        const { name, email, title, message } = state;
+
+        const form = await axios.post('/contact', {
+            name,
+            email,
+            title,
+            message
+        })
+    }
 
     return (
         <Contact className="container">
@@ -28,18 +56,44 @@ export default () => {
                
                 <Col>
                     <h5>Drop a line now!</h5>
-                    <Form>
+                    <Form onSubmit={ e => handleSubmit(e)}>
+                        <input type="hidden" name="form-name" value="contact" />
                         <Form.Group>
-                            <Form.Control type="text" placeholder="Name"/>
+                            <Form.Control 
+                                name="name" 
+                                type="text"
+                                placeholder="Name" 
+    
+                                required 
+                                onChange={handleChange}
+                                />
                         </Form.Group>
                         <Form.Group>
-                            <Form.Control type="email" placeholder="Email" />
+                            <Form.Control 
+                                name="email" 
+                                type="email" 
+                                placeholder="Email" 
+                                required 
+                                onChange={handleChange}
+                                />
                         </Form.Group>
                         <Form.Group>
-                            <Form.Control type="text" placeholder="Subject" />
+                            <Form.Control 
+                                name="title" 
+                                type="text" 
+                                placeholder="Subject" 
+                                required 
+                                onChange={handleChange}
+                                />
                         </Form.Group>
                         <Form.Group>
-                            <Form.Control as="textarea" placeholder="Message" />
+                            <Form.Control 
+                                name="message" 
+                                as="textarea" 
+                                placeholder="Message" 
+                                required 
+                                onChange={handleChange}
+                                />
                         </Form.Group>
                         <Button type="submit">Send Message</Button>
                     </Form>
