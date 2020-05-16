@@ -26,11 +26,17 @@ export default () => {
 
         const { name, email, title, message } = state;
 
-        const form = await axios.post('/contact', {
+        await axios.post('/api/contact', {
             name,
             email,
             title,
             message
+        })
+        .then (res => {
+            if (res === "successful") {
+                alert("Thank you for contacting us.")
+                window.location.pathname = "/"
+            }
         })
     }
 
@@ -52,7 +58,6 @@ export default () => {
                         <a href="/" id="in"><FaLinkedinIn /></a>             
                     </div>
                 </Col>
-               
                
                 <Col>
                     <h5>Drop a line now!</h5>
